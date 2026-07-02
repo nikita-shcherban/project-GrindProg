@@ -1,1 +1,11 @@
-
+import './js/constants.js';
+import './js/helpers.js';
+import './js/feedbacks-api.js';
+import './js/portfolio-api.js';
+import './js/message-api.js';
+import './js/faq.js';
+import './js/menu.js';
+import './js/render-photos.js';
+import './js/loader.js';
+import './js/form-message.js';
+import './js/feedbacks.js';
