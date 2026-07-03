@@ -51,13 +51,40 @@
   margin-left: auto;
 }
 
+.faq-question-icon {
+  transition: transform 400ms ease;
+}
+
+.faq-item.is-active .faq-question-icon {
+  transform: rotate(45deg);
+}
+
 .faq-question {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
 }
 
+.faq-answer-wrapper {
+  overflow: hidden;
+}
+
 .faq-answer {
   padding: 24px;
   padding-top: 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-section .container {
+    gap: 80px;
+  }
+
+  .faq-title-wrapper,
+  .faq-list {
+    width: 768px;
+  }
+
+  .faq-title {
+    font-size: 48px;
+  }
 }
