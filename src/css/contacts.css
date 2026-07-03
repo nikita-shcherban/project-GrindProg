@@ -9,6 +9,7 @@
 .contact-us-content-right {
   justify-self: flex-start;
   align-self: flex-start;
+  position: relative;
 }
 .contact-us {
   gap: 24px;
@@ -100,6 +101,27 @@
 #message-input:focus {
   outline: none;
   border: 2px solid #b09a0c;
+}
+.contact-form-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+}
+
+.contact-form-loader.is-hidden {
+  display: none;
+}
+
+.contact-form-loader .loader {
+  margin: 0;
 }
 @media only screen and (min-width: 768px) {
   .contact-us-address {

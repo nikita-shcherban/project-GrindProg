@@ -3,8 +3,11 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import { createOrder } from './message-api';
 
+import { showLoader, hideLoader } from './loader';
+
 const form = document.querySelector('#contact-form');
 const submitBtn = form.querySelector('.btn-submit');
+const formLoader = document.querySelector('.contact-form-loader');
 
 function validateForm(data) {
   const errors = {};
@@ -70,7 +73,7 @@ async function handleSubmit(event) {
   clearValidationErrors();
 
   try {
-    showLoader();
+    showLoader(formLoader);
 
     await createOrder(orderData);
 
@@ -89,16 +92,6 @@ async function handleSubmit(event) {
       position: 'topRight',
     });
   } finally {
-    hideLoader();
+    hideLoader(formLoader);
   }
-}
-
-function showLoader() {
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Loading...';
-}
-
-function hideLoader() {
-  submitBtn.disabled = false;
-  submitBtn.textContent = "Let's Talk";
 }
