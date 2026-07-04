@@ -1,10 +1,19 @@
-<section class="portfolio-section" id="portfolio">
+<section class="section portfolio-section" id="portfolio">
   <div class="container">
-    <h2 class="portfolio-title">Portfolio Highlights</h2>
+    <div class="portfolio-title-wrapper">
+      <svg width="300" height="21" aria-hidden="true">
+        <use href="/img/icons.svg#icon-decoration"></use>
+      </svg>
+      <h2 class="portfolio-title">Portfolio Highlights</h2>
+    </div>
+
     <ul class="portfolio-category">
       <li class="selected-category" id="all-photos">All Photos</li>
     </ul>
     <ul class="portfolio-images"></ul>
+    <div class="portfolio-loader-wrapper is-hidden">
+      <span class="loader portfolio-loader"></span>
+    </div>
     <div class="button-wrapper">
       <button class="show-more-button">Show More</button>
     </div>
