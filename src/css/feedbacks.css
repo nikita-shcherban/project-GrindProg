@@ -98,21 +98,24 @@
 .feedbacks-pagination-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 24px;
   flex-wrap: nowrap;
   width: 100%;
 }
+.swiper-pagination-container {
+  position: relative;
+  min-width: 48px;
+  min-height: 24px;
+}
 
 .feedbacks-pagination {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  position: static;
+  display: block;
+  position: absolute;
 }
 
 .feedbacks-pagination .swiper-pagination-bullet {
-  width: 8px;
+  min-width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #000;

@@ -36,7 +36,7 @@ function initSwiper() {
   swiperInstance = new Swiper('.feedbacks-swiper', {
     modules: [Navigation, Pagination, Keyboard, A11y],
     slidesPerView: 1,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     spaceBetween: 16,
     keyboard: { enabled: true },
     a11y: true,
@@ -48,6 +48,8 @@ function initSwiper() {
     pagination: {
       el: '.feedbacks-pagination',
       clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 3,
     },
     breakpoints: {
       768: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 24 },
