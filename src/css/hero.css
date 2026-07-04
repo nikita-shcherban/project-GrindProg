@@ -1,4 +1,4 @@
-.hero-section .container {
+.hero-section .container .row {
     position: relative;
     width: 100%; 
     display: flex;
