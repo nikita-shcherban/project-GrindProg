@@ -3,6 +3,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import { createOrder } from './message-api';
 import { showLoader, hideLoader } from './loader';
+import { openSuccessModal } from './success-modal';
 
 // Contact form element
 const form = document.querySelector('#contact-form');
@@ -82,13 +83,8 @@ async function handleSubmit(event) {
     showLoader(formLoader);
 
     await createOrder(orderData);
-
-    iziToast.success({
-      message: 'Order created successfully!',
-      position: 'topRight',
-    });
-
     form.reset();
+    openSuccessModal();
   } catch (error) {
     iziToast.error({
       message:
