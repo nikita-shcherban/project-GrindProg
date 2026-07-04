@@ -10,7 +10,9 @@ information from the lead in order to contact them.
 - Adaptive layout
 - Real-time DB requests
 - Contact form
+- Custom validation rules
 - Interactive feedbacks and portfolio
+- Embedded modals
 
 ## Tech Stack
 
