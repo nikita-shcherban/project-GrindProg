@@ -25,14 +25,7 @@ let countShowedImages = 0;
 let countShowMoreClicks = 0;
 
 renderCategories();
-try {
-  renderBasicImages();
-} catch {
-  iziToast.error({
-    message: 'Something went wrong with request renderBasicImages',
-    position: 'bottomRight',
-  });
-}
+renderBasicImages();
 
 categoryList.addEventListener('click', handleClickCategory);
 buttonElement.addEventListener('click', handleShowMoreClick);
@@ -87,7 +80,8 @@ async function renderCategories() {
       img => `<li id=${img._id}>${img.category}</li>`
     );
     categoryList.insertAdjacentHTML('beforeend', list.join(''));
-  } catch {
+  } catch (error) {
+    console.log(error);
     iziToast.error({
       message: 'Something went wrong with Category request',
       position: 'bottomRight',

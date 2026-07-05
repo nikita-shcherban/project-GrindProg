@@ -40,7 +40,7 @@
 .portfolio-category > li:hover,
 .portfolio-category > li:focus {
   cursor: pointer;
-  border-color: black;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 li.selected-category {
@@ -70,6 +70,7 @@ li.selected-category {
   height: 334px;
   border-radius: 16px;
   display: block;
+  object-fit: cover;
 }
 @media only screen and (min-width: 768px) {
   .portfolio-images > li > img {

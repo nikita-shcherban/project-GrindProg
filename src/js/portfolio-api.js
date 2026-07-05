@@ -14,9 +14,6 @@ export async function getWeddingPhotos(
   page = 1,
   limit = LIMIT_IMAGE_PER_PAGE
 ) {
-  if (categories === 'all-photos') {
-    categories = undefined;
-  }
   const response = await axios.get(
     'https://wedding-photographer.b.goit.study/api/wedding-photos',
     {
