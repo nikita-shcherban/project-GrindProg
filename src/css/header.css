@@ -66,19 +66,22 @@
   opacity: 0.6;
 }
 .header-nav-item {
-  padding: 12px 0;
+  padding: 9px 7px;
+  border-radius: 6px;
   cursor: pointer;
-  transition-property: opacity;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
-
-.header-nav-item:hover,
-.header-nav-item:focus {
-  opacity: 0.5;
+.header-nav-item:last-child {
+  padding: 12px 0;
+}
+.header-nav-item:not(:last-child):hover,
+.header-nav-item:not(:last-child):focus {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .header-nav-item:active {
-  opacity: 0.6;
+  color: #b09a0c;
 }
 .header-session-link {
   display: none;
