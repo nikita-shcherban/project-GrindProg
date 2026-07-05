@@ -68,6 +68,8 @@ Start the server
 
 - [@MaksymRC1](https://github.com/MaksymRC1)
 
+- [@Dikhtenko Anton](https://github.com/SexBlender)
+
 ## Feedback
 
 If you have any feedback, please reach out to us at saintenough1992@gmail.com
