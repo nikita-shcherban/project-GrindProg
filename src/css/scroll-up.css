@@ -1,0 +1,39 @@
+.scroll-up-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+  padding: 14px 22px;
+  background-color: rgba(250, 247, 230, 0.8);
+  border-radius: 50%;
+  border: 1px solid #000;
+  font-family: Mulish, sans-serif;
+  font-size: 28px;
+
+  transition: background-color 300ms ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll-up-btn {
+    padding: 16px 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .scroll-up-btn {
+    bottom: 30px;
+    right: 40px;
+    padding: 24px 32px;
+  }
+}
+
+.scroll-up-btn:hover,
+.scroll-up-btn:focus {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.scroll-up-btn:active {
+  color: #b09a0c;
+  background-color: transparent;
+}
