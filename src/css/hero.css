@@ -50,3 +50,9 @@
     background: #fff;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-section .container .row {
+        padding: 122px 32px;
+    }
+    
+}
