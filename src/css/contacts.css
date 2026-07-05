@@ -85,6 +85,7 @@
 }
 #contact-form > textarea {
   padding: 12px;
+  resize: none;
 }
 #contact-form > input::placeholder,
 #contact-form > textarea::placeholder {
