@@ -45,8 +45,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -129,7 +129,6 @@
   .backdrop {
     padding: 64px 0;
   }
-
   .modal {
     max-width: 768px;
     padding: 64px;
