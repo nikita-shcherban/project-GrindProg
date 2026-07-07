@@ -73,10 +73,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .section {
-    padding: 48px 0;
-  }
-
   .benefits-title {
     width: 768px;
     font-weight: 500;

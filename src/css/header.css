@@ -113,6 +113,7 @@
 }
 .mobile-menu-open .header-nav {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -127,6 +128,7 @@
   flex-direction: column;
   row-gap: 16px;
   width: 100%;
+  align-self: flex-start;
 }
 .mobile-menu-open .header-session-link {
   display: block;
